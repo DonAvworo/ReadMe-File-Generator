@@ -55,3 +55,10 @@ inquirer
       ? console.log('Success!')
       : console.log('You forgot your password already?!')
   );
+//-----------------------------------------------------
+
+['MIT', 'Apache', 'GPL', 'BSD', 'None'].forEach(license => { //for each license in the array, run the function below 
+    if (license === license) {                               //if the license is equal to the license passed in, return the following,
+                                                             //this will be the badge of the license that is passed in the renderLicenseBadge function
+        return `[![License](https://img.shields.io/badge/License-${license}-blue.svg)](https://opensource.org/licenses/${license})`;
+    

@@ -4,8 +4,7 @@
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Author](#author)
-Muziknm3
-8
+
 
 ## General info
 This project is simple Lorem ipsum dolor generator.
