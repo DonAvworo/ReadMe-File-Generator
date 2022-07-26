@@ -1,7 +1,7 @@
 
 const inquirer = require('inquirer'); //import inquirer
 const fs = require('fs'); // dependency required for functionality
-const generateMarkdown = require('./utils/generateMarkdown.js'); //import the generateMarkdown function from the utils folder
+const generateMarkdown = require('./assets/js//generateMarkdown.js'); //import the generateMarkdown function from the utils folder
 
 
 // create an array of questions that the user will answer to generate the README file
@@ -68,6 +68,19 @@ const questions = [
         }
     },
 
+    //ask the user to enter the names of creators and contributors
+    {   type: 'input',
+        name: 'test',
+        message: 'Please enter the names of creators and contributors. (e.g. "The following people have contributed to this project: Hope Pope, Moe Doe, Selina Williams, Craig Golliath.")',
+        validate: function(input) {
+        if (input.length < 1 || input.length > 10000 ) {
+            return 'Maybe later? type in, Yep or Nope to continue.'; //for user interaction, otherwise pointless ;)
+            }
+            else { //if the input is valid, return true
+            return true;
+            }
+        }
+    },
 
     //ask the user to enter a test instructions
     { type: 'input',
