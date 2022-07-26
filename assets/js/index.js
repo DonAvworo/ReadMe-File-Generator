@@ -1,12 +1,14 @@
 
-const questions = require('inquirer'); //import inquirer
+const inquirer = require('inquirer'); //import inquirer module and store it in a variable called prompts and use it to ask the user questions about the project
 const fs = require('fs'); // dependency required for functionality
-const generateMarkdown = require('./assets/js//generateMarkdown.js'); //import the generateMarkdown function from the utils folder
+const generateMarkdown = require('./assets/js/generateMarkdown.js'); //import the generateMarkdown function from the utils folder
 
 
 /*create an array of question prompts, using the created variable (const questions = require('inquirer');) that the user will answer 
 to generate the README file and pass the data into the generateMarkdown function*/
-questions = [
+inquirer
+    .prompt = ([
+        
     {   type: 'input',
         name: 'title',
         message: 'What do you want to call this project? (e.g. "My New Project")',
@@ -145,44 +147,63 @@ questions = [
         }
         }
     }
+]);
 
-    .then((response) =>
-    response.confirm === response.password
-      ? console.log('Success!')
-      : console.log('You forgot your password already?!')
-  )
+const init = () => {
+    prompt()
+        .then(answers => { fs.writeFileSync('./README.md', generateMarkdown(answers)); }
+        )
+        .then(() => { console.log('Successfully created README.md'); }//if the file is successfully created, print this message
+        )
+        .catch(err => { console.log(err); } //if the file is not successfully created, print this message
+        );
+}
 
-];
-
+init();
 
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
-
+function renderLicenseBadge(license) {
+    if (license === 'MIT' || 'Apache' || 'GPL' || 'BSD' || 'None') {  //if the license is MIT, return the following string with url
+        return '[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'; 
+    }
+    else if (license === 'ISC') { //if the license is ISC, return the following string with url
+        return '[![ISC License](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)';
+    }
 };
-
-
-
+    renderLicenseBadge(license); 
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-
-    [ 'MIT', 'Apache', 'GPL', 'BSD', 'None' ].forEach(license => { //for each license in the array, run the function below
-        if (license === license) {                              //if the license is equal to the license, run the function below
-            return `[![License](https://img.shields.io/badge/license-${license}-blue.svg)](https://opensource.org/licenses/${license})`;
-        }
-        else {
+function renderLicenseLink(license) {
+    if (license === license) {                              //if the license is equal to the license, return the license link
+        return `[![License](https://img.shields.io/badge/license-${license}-blue.svg)](https://opensource.org/licenses/${license})
+        `;
+    }
+        
+    else {
             return ''; // if no license is found, return an empty string
-        }
-    });
-
-    renderLicenseBadge(license);
-};
+    }
+}
+    renderLicenseLink(license);
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
+    if (license === 'MIT') { //if the license is MIT, return the following string
+        return `
 
+        [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+        `;
+    }
+    else if (license === 'Apache') { //if the license is Apache, return the following string
+        return `
+        ## License 
+        [![Apache License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+        `;
+    }   
 };
+    renderLicenseSection(license)
+
+    
