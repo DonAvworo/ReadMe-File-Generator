@@ -1,11 +1,12 @@
 
-const inquirer = require('inquirer'); //import inquirer
+const questions = require('inquirer'); //import inquirer
 const fs = require('fs'); // dependency required for functionality
 const generateMarkdown = require('./assets/js//generateMarkdown.js'); //import the generateMarkdown function from the utils folder
 
 
-// create an array of questions that the user will answer to generate the README file
-const questions = [
+/*create an array of question prompts, using the created variable (const questions = require('inquirer');) that the user will answer 
+to generate the README file and pass the data into the generateMarkdown function*/
+questions = [
     {   type: 'input',
         name: 'title',
         message: 'What do you want to call this project? (e.g. "My New Project")',
@@ -101,7 +102,6 @@ const questions = [
         name: 'technologyUsed',
         message: 'Please select the technology used in your project.',
         choices: ['HTML', 'CSS', 'JS','MySQL', 'MongoDB', 'React', 'Python', 'PHP', 'Some of the above plus other technologies', 'None']
-        
     }, 
     
     //ask the user to enter a the github username of the user who created the project
@@ -146,6 +146,12 @@ const questions = [
         }
     }
 
+    .then((response) =>
+    response.confirm === response.password
+      ? console.log('Success!')
+      : console.log('You forgot your password already?!')
+  )
+
 ];
 
 
@@ -179,13 +185,4 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
 
-}
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-
-`;
-}
-
-module.exports = generateMarkdown;
+};
