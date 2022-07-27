@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/DonAvworo/week-9-homework#readme",
   "dependencies": {
-    "inquirer": "^8.0.2"
+    "inquirer": "^8.2.4"
   }
 }
