@@ -12,7 +12,7 @@ const init = () => {
         {
             type: 'input',
             name: 'tableOfContents',
-            message: 'A table of contents has been automatically generated for You. Please press enter to continue.',
+            message: 'Hello you! You have started the process of generating a README FILE. A table of contents has been automatically generated for You. Please press enter to continue.',
             validate: function (input) { 
                 if (input.length > 1) {
                     return 'Please delete (backspace bttton) the characters typed in and press enter to continue.';

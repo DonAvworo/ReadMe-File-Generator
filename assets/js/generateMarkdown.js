@@ -62,9 +62,7 @@ function generateMarkdown(data) {
   // call the function to render the license section
   const license = renderLicenseSection(data.license);
   
-  return ` 
-  # Title: 
-  ${data.title}
+  return `# ${data.title}
   ## License:
   ${license}
   ## Description:

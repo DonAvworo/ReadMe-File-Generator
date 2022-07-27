@@ -1,11 +1,10 @@
- 
-  #whatever
+# Eter the Dragon Game App
   ## License:
   
   [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
   ## Description:
-  whatever
+  the legend of bruce lee
   ## Table of contents
     * [Title](#title)
     * [License](#license)
@@ -26,44 +25,41 @@
     * [Email](#email)
   
   ## Installation:
-  ---
-  whatever
-
-  ---
+  downlod and run programme in terminal
   ## Usage:
-  whatever
+  use the alphanumeric keys to perform all functions
   ## Technologies:
-  js
+  js c++
   ## Frameworks:
-  node environment
+  react
   ## Dependencies:
-  npm i
+  none
   ## Author:
-  whjatever
+  don
   ## Contributing:
-  call me
+  none
   ## Acknowledgements:
-  a b c
+  bone
   ## Test: 
-  test
+  hone
   ## Questions:
-  ghdshda
+  gone
   ## GitHubUsername:
   undefined
   ## GitHubUrl:
   undefined
   ## Email:
-  
+  n/a
     
 
   Embed images using the following syntax
 
-  -1 Markup Syntax
+  -  Markup Syntax
   ![]()
   ![image descriptiom](image location)
   ![](homework/week-3-homework/assets/img/Web%20KeyGen.png)
 
-  -2 Html Syntax
+  *  Html Syntax
   <img src="" alt="">
   <img src="imageName.format" alt="image description">
 
