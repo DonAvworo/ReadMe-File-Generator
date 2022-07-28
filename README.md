@@ -1,65 +1,62 @@
-# Eter the Dragon Game App
+
+  # Title: 
+  GITHUB
   ## License:
   
-  [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  
   ## Description:
-  the legend of bruce lee
-  ## Table of contents
-    * [Title](#title)
+  HJHJ
+  ## Contents:
+  #### (Click any link below to navigate to its content) 
+  * [Title](#title)
     * [License](#license)
-    * [Description:](#description)
-    * [Table of contents](#table-of-contents)
-    * [Installation](#installation)
+  * [Description](#description)
+    * [Contents](#contents)
+  * [Installation](#installation)
     * [Usage](#usage)
-    * [Technologies](#technologies)
+  * [Technologies](#technologies)
     * [Frameworks](#frameworks)
-    * [Dependencies](#dependencies)
+  * [Dependencies](#dependencies)
     * [Author](#author)
-    * [Contributing](#contributionguidelines)
+  * [Contributions](#contributions)
     * [Acknowledgements](#acknowledgements)
-    * [Test](#ttestInstructions)
+  * [Test](#tests)
     * [Questions](#questions)
-    * [GitHub-User](#githubUsername)
-    * [GitHub-Url](#githuburl)
+  * [GitHub](#github)
     * [Email](#email)
-  
+  undefined
   ## Installation:
-  downlod and run programme in terminal
+  DSD
   ## Usage:
-  use the alphanumeric keys to perform all functions
+  DSDSD
   ## Technologies:
-  js c++
+  SDSD
   ## Frameworks:
-  react
+  SDSD
   ## Dependencies:
-  none
+  SDSD
   ## Author:
-  don
-  ## Contributing:
-  none
+  SDSD
+  ## Contributions:
+  DSDS
   ## Acknowledgements:
-  bone
-  ## Test: 
-  hone
+  DSDS
+  ## Tests: 
+  DSDS
   ## Questions:
-  gone
-  ## GitHubUsername:
-  undefined
-  ## GitHubUrl:
-  undefined
+  SDSD
+  ## GitHub:
+  SDSD
   ## Email:
-  n/a
+  SDSD
     
 
-  Embed images using the following syntax
+  Embed images to this file using the following syntaxes:
 
-  -  Markup Syntax
+  - Markup Syntax
   ![]()
   ![image descriptiom](image location)
   ![](homework/week-3-homework/assets/img/Web%20KeyGen.png)
 
-  *  Html Syntax
+  * Html Syntax
   <img src="" alt="">
   <img src="imageName.format" alt="image description">
-

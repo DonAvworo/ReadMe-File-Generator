@@ -62,30 +62,32 @@ function generateMarkdown(data) {
   // call the function to render the license section
   const license = renderLicenseSection(data.license);
   
-  return `# ${data.title}
+  return `
+  # Title: 
+  ${data.title}
   ## License:
   ${license}
   ## Description:
   ${data.description}
-  ## Table of contents
-    * [Title](#title)
+  ## Contents:
+  #### (Click any link below to navigate to its content) 
+  * [Title](#title)
     * [License](#license)
-    * [Description:](#description)
-    * [Table of contents](#table-of-contents)
-    * [Installation](#installation)
+  * [Description](#description)
+    * [Contents](#contents)
+  * [Installation](#installation)
     * [Usage](#usage)
-    * [Technologies](#technologies)
+  * [Technologies](#technologies)
     * [Frameworks](#frameworks)
-    * [Dependencies](#dependencies)
+  * [Dependencies](#dependencies)
     * [Author](#author)
-    * [Contributing](#contributionguidelines)
+  * [Contributions](#contributions)
     * [Acknowledgements](#acknowledgements)
-    * [Test](#ttestInstructions)
+  * [Test](#tests)
     * [Questions](#questions)
-    * [GitHub-User](#githubUsername)
-    * [GitHub-Url](#githuburl)
+  * [GitHub](#github)
     * [Email](#email)
-  ${data.tableOfContents}
+  ${data.contents}
   ## Installation:
   ${data.installation}
   ## Usage:
@@ -98,33 +100,30 @@ function generateMarkdown(data) {
   ${data.dependencies}
   ## Author:
   ${data.author}
-  ## Contributing:
-  ${data.contributionGuidelines}
+  ## Contributions:
+  ${data.contributions}
   ## Acknowledgements:
   ${data.acknowledgements}
-  ## Test: 
-  ${data.testInstructions}
+  ## Tests: 
+  ${data.tests}
   ## Questions:
   ${data.questions}
-  ## GitHubUsername:
-  ${data.githubusername}
-  ## GitHubUrl:
-  ${data.githuburl}
+  ## GitHub:
+  ${data.github}
   ## Email:
   ${data.email}
     
 
-  Embed images using the following syntax
+  Embed images to this file using the following syntaxes:
 
-  -1 Markup Syntax
+  - Markup Syntax
   ![]()
   ![image descriptiom](image location)
   ![](homework/week-3-homework/assets/img/Web%20KeyGen.png)
 
-  -2 Html Syntax
+  * Html Syntax
   <img src="" alt="">
   <img src="imageName.format" alt="image description">
-
 `;
 }
 

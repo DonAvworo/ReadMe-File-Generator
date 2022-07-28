@@ -4,18 +4,17 @@ const fs = require('fs'); // dependency required for functionality
 const generateMarkdown = require('./assets/js/generateMarkdown.js'); //import the generateMarkdown function from the utils folder
 
 const init = () => {
-    /*create an array of question prompts, using the created variable (const questions = require('inquirer');) that the user will answer 
-    to generate the README file and pass the data into the generateMarkdown function*/
+    /*create an array of question prompts to generate the README file and pass the data into the generateMarkdown function*/
     inquirer.prompt([
 
         //ask the user to enter a table of contents
         {
             type: 'input',
-            name: 'tableOfContents',
+            name: 'Contents',
             message: 'Hello you! You have started the process of generating a README FILE. A table of contents has been automatically generated for You. Please press enter to continue.',
             validate: function (input) { 
-                if (input.length > 1) {
-                    return 'Please delete (backspace bttton) the characters typed in and press enter to continue.';
+                if (input.length >= 1) {
+                    return 'Please delete the text type in (using the backspace button) and press enter to continue.';
                 }
                 //if the input is valid, or no input, return true
                 else { 
@@ -157,7 +156,7 @@ const init = () => {
         //ask the user to enter a contribution guidelines
         {
             type: 'input',
-            name: 'contributionGuidelines',
+            name: 'contributions',
             message: 'Please enter a contribution guidelines for your project. (e.g. "To contribute, please submit a pull request on GitHub.")',
             validate: function (input) {
                 if (input.length < 1 || input.length > 10000) {
@@ -180,7 +179,7 @@ const init = () => {
         //ask the user to enter a test instructions
         {
             type: 'input',
-            name: 'testInstructions',
+            name: 'tests',
             message: 'Please enter a test instructions for your project. (e.g. "To run tests, run the tests command.")',
         },
 
@@ -194,15 +193,8 @@ const init = () => {
         //ask the user to enter a the github username of the user who created the project
         {
             type: 'input',
-            name: 'githubUsername',
+            name: 'github',
             message: 'Please enter the github username of the user who created the project.',
-        },
-
-        //ask the user to enter a the github url of the user who created the project
-        {
-            type: 'input',
-            name: 'githubUrl',
-            message: 'Please enter the github url of the user who created the project.',
         },
 
         //ask the user to enter a the email of the user who created the project
@@ -210,11 +202,20 @@ const init = () => {
             type: 'input',
             name: 'email',
             message: 'Please enter the email of the user who created the project.',
-    
-        }
-    ]).then(answers => {
+        },
 
-        const content = generateMarkdown(answers);  
+        //warn the user that creating a README file will overwrite the current README file
+        {   type: 'confirm',
+            name: 'overwrite',
+            message: 'Your file is ready. Please note that generating this file will overwrite any existing README file with the name README.md in the root directory of your project. Are you sure you want to continue?',
+            default: true
+        }
+
+       
+        //when the user has answered all the questions, create the README file
+    ]).then(answers => { 
+
+        const content = generateMarkdown(answers);   //generate the markdown file content from the answers object 
 
         fs.writeFileSync('./README.md', content);
         // console.log('Successfully created README.md');
