@@ -1,10 +1,12 @@
 
   # Title: 
-  GITHUB
+  README Template Generator
   ## License:
   
+  [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  
   ## Description:
-  HJHJ
+  Sampling the generatyor
   ## Contents:
   #### (Click any link below to navigate to its content) 
   * [Title](#title)
@@ -25,29 +27,29 @@
     * [Email](#email)
   undefined
   ## Installation:
-  DSD
+  npm install
   ## Usage:
-  DSDSD
+  Used to create a professional readme
   ## Technologies:
-  SDSD
+  JS NODE EXPRESSS HTML
   ## Frameworks:
-  SDSD
+  HTML NODE
   ## Dependencies:
-  SDSD
+  EXPRESS
   ## Author:
-  SDSD
+  Don Avworo
   ## Contributions:
-  DSDS
+  Email me
   ## Acknowledgements:
-  DSDS
+  n/a
   ## Tests: 
-  DSDS
+  n/a
   ## Questions:
-  SDSD
+  n/a
   ## GitHub:
-  SDSD
+  Don Avworo
   ## Email:
-  SDSD
+  theprodigaldon@gmail.com
     
 
   Embed images to this file using the following syntaxes:
