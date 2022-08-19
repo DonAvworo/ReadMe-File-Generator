@@ -1,14 +1,25 @@
 
   # Title: 
+  ```
   README Template Generator
+  ```
+  ---
+  
   ## License:
   
   [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
   
+  ---
   ## Description:
-  Sampling the generatyor
+  ---
+  A simple readme file generator with a few options for customization. 
+
+  ---
   ## Contents:
+  ```
   #### (Click any link below to navigate to its content) 
+  ```
+  ---
   * [Title](#title)
     * [License](#license)
   * [Description](#description)
@@ -25,41 +36,79 @@
     * [Questions](#questions)
   * [GitHub](#github)
     * [Email](#email)
-  undefined
+
+  ---
+
   ## Installation:
-  npm install
+ 
+  ```
+  Run npm start on terminal and follow the instructions
+  ```
+  ---
   ## Usage:
-  ---
-  Used to create a professional readme file for projects. Very usefull for projects that have a lot of documentation and a lot of code. The readme file generated provides the user with informations about the project, a quick way to get an overview of the project and informatyion about the authors and the project itself etc.
 
+  ```
+  Used to create a professional readme file for projects. Very useful for projects that have a lot of documentation and a lot of code. The readme file generated provides the user with informations about the project, a quick way to get an overview of the project and information about the author/s.
+  ```
   ---
-  
   ## Technologies:
-  JS NODE EXPRESSS HTML
+  
+  ```
+  JS, NODE, EXPRESSS 
+  ```
+  --- 
   ## Frameworks:
-  HTML NODE
+  
+  ```
+  NODE
+  ```
+  ---
   ## Dependencies:
-  EXPRESS
+
+  ```
+  EXPRESS 
+  ```
+  ---
   ## Author:
+  ```
   Don Avworo
+  ```
+  ---
   ## Contributions:
-  Email me
+  ```
+  Please send email or pull request
+  ```
+  ---
   ## Acknowledgements:
+  ```
   n/a
+  ```
+  ---
   ## Tests: 
+  ```
   n/a
+  ```
+  ---
   ## Questions:
+  ```
   n/a
+  ```
+  ---
   ## GitHub:
+  ```
   Don Avworo
+  ```
+  ---
   ## Email:
-  theprodigaldon@gmail.com
+  theprodigaldonbbm@gmail.com
 
   ---
 
 
-  
-  Bonus
+  ---
+  ```
+  Bonus 
+  ```
   ---
 
   Embed images to this file using the following syntaxes:

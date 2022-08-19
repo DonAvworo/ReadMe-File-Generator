@@ -1,12 +1,13 @@
 # Title 
 
 ## Table of contents
+---
 * [Title](#title)
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [Setup](#setup)
 * [Author](#author)
-----
+---
 
 ## General info
 
@@ -52,3 +53,4 @@ Embed Project image using
 <img src="imageName.format" alt="image description">
 
 --- 
+
