@@ -64,3 +64,7 @@
   <img src="" alt="">
   <img src="imageName.format" alt="image description">
 
+
+
+  Used to create a professional readme file for projects. Very usefull for projects that have a lot of documentation and a lot of code. The readme file generated provides the user with informations about the project, a quick way to get an overview of the project and informatyion about the authors and the project itself etc.
+

@@ -29,7 +29,11 @@
   ## Installation:
   npm install
   ## Usage:
-  Used to create a professional readme
+  ---
+  Used to create a professional readme file for projects. Very usefull for projects that have a lot of documentation and a lot of code. The readme file generated provides the user with informations about the project, a quick way to get an overview of the project and informatyion about the authors and the project itself etc.
+
+  ---
+  
   ## Technologies:
   JS NODE EXPRESSS HTML
   ## Frameworks:
@@ -50,7 +54,13 @@
   Don Avworo
   ## Email:
   theprodigaldon@gmail.com
-    
+
+  ---
+
+
+  
+  Bonus
+  ---
 
   Embed images to this file using the following syntaxes:
 
